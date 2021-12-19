@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title *ngIf="food">
+    
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <h1 *ngFor="let re of recipe;let i = index " [routerLink]="['/second',re.name]">
+    {{'Recipe Name: '+re.fields.foodName.stringValue}}
+    <h2>Ingredients: </h2>
+    <p style="color:yellow" *ngFor="let fo of re.fields.ingredients.arrayValue.values"> {{fo.mapValue.fields.name.stringValue}}</p>
+  </h1>
+
+</ion-content>

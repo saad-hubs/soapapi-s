@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "dull2firebase": {
+      "hosting": {
+        "app": [
+          "dull2firebase"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "dull2firebase"
+  }
+}
